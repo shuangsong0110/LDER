@@ -64,7 +64,7 @@ runLDER(assoc=GWAS_SUMMARY_STATISTICS (required),
 	ethnic=ETHNIC (optional),
 	method=METHOD (default='lder')
 	cores=NUMBER_OF_CORES (optional),
-	a=INFLATION_FACTOR (optional)_
+	a=INFLATION_FACTOR (optional))
 ```
 - GWAS_SUMMARY_STATISTICS (required): GWAS summary statistics, need to include `snp`, `chr`, `a0`, `a1`, `z` (header is necessary)
 
