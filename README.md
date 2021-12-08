@@ -94,7 +94,31 @@ If `method='lder'`, the `runLDER` function returns a list with 4 elements:
 
 `inf.se`: The standard error of estimated inflation factor estimated with block-jackknife.
 
-If `method='both', the `runLDER` function returns a list containing the results of both LDER and LDSC.
+If `method='both'`, the `runLDER` function returns a list containing the results of both LDER and LDSC.
 
 
+## A Simplified Pipeline
+Download a sample GWAS summary statistics:
+$ wget -O gwas_sample.txt https://cloud.tsinghua.edu.cn/f/828ab71c87d84dd28d47/?dl=1
 
+Download 1000G LD reference:
+
+$ wget https://data.broadinstitute.org/alkesgroup/LDSCORE/1000G_Phase3_plinkfiles.tgz
+
+$ tar -xvzf 1000G_Phase3_plinkfiles.tgz
+
+
+Run with R:
+
+```r
+devtools::install_github('shuangsong0110/LDER')
+library(LDER)
+library(data.table)
+path0 <- getwd()
+assoc <- fread('gwas_sample.txt')
+for(chr in 1:22){
+    generateLD(assoc, path = path0, bfile_path = paste0('/1000G_EUR_Phase3_plink/1000G.EUR.QC.', chr))
+}
+res <- runLDER(assoc, n.gwas=2e4, path=path0, LD.insample=F, ethnic='eur', n.ld=489, cores=10, method='lder', a=NULL)
+
+```
