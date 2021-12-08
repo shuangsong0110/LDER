@@ -1,6 +1,10 @@
 # LDER
 We design a method for heritability estimation, namely LD Eigenvalue Regression (LDER), which extends the LDSC method and provides more accurate estimates of heritability and confounding inflation.
 
+Citation:
+
+Shuang Song, Wei Jiang, Yiliang Zhang, Lin Hou, and Hongyu Zhao. Leveraging LD eigenvalue regression to improve the estimation of SNP heritability and confounding inflation. Submitted.
+
 ## Table of contents
 * [Install](#install)
 * [LD prepared](#ld-prepared)
