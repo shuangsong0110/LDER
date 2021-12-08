@@ -48,9 +48,53 @@ generateLD(assoc=GWAS_SUMMARY_STATISTICS (required),
 - PATH_TO_PYTHON_SOFTWARE (optional): The path to the python software. If not specified, the function will use the default path (system("which python"))
 
 
+## Estimation of heritability and inflation factor
+The main funcion can be run with:
+
+```r
+runLDER(assoc=GWAS_SUMMARY_STATISTICS (required), 
+	n.gwas=SAMPLE_SIZE_OF_GWAS (required), 
+	path=OUTPUT_DIR (required),
+	LD.insample=IN_SAMPLE_LD (T/F, required),
+	n.ld=SAMPLE_SIZE_OF_LD_REF (required), 
+	ethnic=ETHNIC (optional),
+	method=METHOD (default='lder')
+	cores=NUMBER_OF_CORES (optional),
+	a=INFLATION_FACTOR (optional)_
+```
+- GWAS_SUMMARY_STATISTICS (required): GWAS summary statistics, need to include `snp`, `chr`, `a0`, `a1`, `z` (header is necessary)
+
+- n.gwas (required): The sample size of the GWAS summary statistics
+
+- OUTPUT_DIR (required): The output path (Note that the path should be SAME with that used in function `generateLD`)
+
+- IN_SAMPLE_LD (required): T/F, whether the LD reference is estimated with the GWAS cohort (T) or external reference panel (e.g. 1000 Genome Project: F)
+
+- SAMPLE_SIZE_OF_LD_REF (required): The sample size of the LD reference (e.g., 489 for 1000G)
+
+- ETHNIC (optional): Ethnic of the GWAS cohort; 'eur' for European ancestry.
+
+- METHOD (optional): Default='lder'. We also provide a choice of 'both', which outputs the results for both LDER and LDSC.
+
+- NUMBER_OF_CORES (optional): The number of cores for computation in parallel.
+
+- INFLATION_FACTOR (optional): Pre-specified inflation factor, default=NULL.
 
 
 
+## Output
+
+If `method='lder'`, the `runLDER` function returns a list with 4 elements:
+
+`h2`: Estimated heritability by LDER
+
+`inf`: Estimated inflation factor by LDER
+
+`h2.se`: The standard error of estimated heritability estimated with block-jackknife.
+
+`inf.se`: The standard error of estimated inflation factor estimated with block-jackknife.
+
+If `method='both', the `runLDER` function returns a list containing the results of both LDER and LDSC.
 
 
 
