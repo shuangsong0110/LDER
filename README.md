@@ -127,3 +127,10 @@ for(chr in 1:22){
 res <- runLDER(assoc, n.gwas=2e4, path=path0, LD.insample=F, ethnic='eur', n.ld=489, cores=10, method='lder', a=NULL)
 
 ```
+
+
+## Maintainer
+
+Please contact Shuang Song (song-s19@mails.tsinghua.edu.cn) if there are any problems or questions.
+
+
