@@ -20,12 +20,17 @@ devtools::install_github('shuangsong0110/LDER')
 
 ## LD prepared
 We provide a function `plinkLD.py` for efficient LD information extraction and shrinkage based on Python. 
-Users could specify their own LD reference files with plink bfile format (.bim, .fam, .bed).
+Users could either specify their own LD reference files with plink bfile format (.bim, .fam, .bed), or use the pre-computed LD information. We provide two examples here.
+
+NOTE: We suggest users use plink bfile as the input, because the different numbers of SNPs in GWAS and in the reference panel may lead to a slight difference in the LD shrinkage.
+
+### Example 1: Use plink bfile as the input (recommended)
 The 1000 Genome Project reference panel (hg19) can be downloaded by:
 
 `wget https://data.broadinstitute.org/alkesgroup/LDSCORE/1000G_Phase3_plinkfiles.tgz`
 
 `tar -xvzf 1000G_Phase3_plinkfiles.tgz`
+
 
 ```r
 library(LDER)
@@ -50,6 +55,12 @@ generateLD(assoc=GWAS_SUMMARY_STATISTICS (required),
 - PATH_TO_PLINK_SOFTWARE (optional): The path to the plink software. If not specified, the function will use the default path (system("which plink"))
 
 - PATH_TO_PYTHON_SOFTWARE (optional): The path to the python software. If not specified, the function will use the default path (system("which python"))
+
+### Example 2: Use the pre-computed LD information
+
+The pre-computed LD information of 276,050 UK Biobank European individuals can be downloaded by
+
+`wget `
 
 
 ## Estimation of heritability and inflation factor
