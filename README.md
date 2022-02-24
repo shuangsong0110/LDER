@@ -60,8 +60,13 @@ generateLD(assoc=GWAS_SUMMARY_STATISTICS (required),
 
 The pre-computed LD information of 276,050 UK Biobank European individuals can be downloaded by
 
-`wget `
+`wget -O LD.shrink.zip https://cloud.tsinghua.edu.cn/f/abf1020acb9c435eaa13/?dl=1 --no-check-certificate`
 
+`wget -O LD.zip https://cloud.tsinghua.edu.cn/f/d93a4a7013fe461aa9fc/?dl=1 --no-check-certificate`
+
+`unzip LD.shrink.zip`
+
+`unzip LD.zip`
 
 ## Estimation of heritability and inflation factor
 The main funcion can be run with:
