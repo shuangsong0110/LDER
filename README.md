@@ -123,7 +123,7 @@ If `method='both'`, the `runLDER` function returns a list containing the results
 ## :key: A Simplified Pipeline
 Download a sample GWAS summary statistics:
 
-$ wget -O gwas_sample.txt https://cloud.tsinghua.edu.cn/f/828ab71c87d84dd28d47/?dl=1
+$ wget -O gwas_sample.txt https://cloud.tsinghua.edu.cn/f/828ab71c87d84dd28d47/?dl=1 --no-check-certificate
 
 Download 1000G LD reference:
 
