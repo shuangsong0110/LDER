@@ -12,17 +12,17 @@ Shuang Song, Wei Jiang, Yiliang Zhang, Lin Hou, and Hongyu Zhao. Leveraging LD e
 * [Output](#output)
 * [A Simplified Pipeline](#a-simplified-pipeline)
 
-## Install
+## :open_book: Install
 LDER is an R package which can be installed using the command:
 ```r
 devtools::install_github('shuangsong0110/LDER')
 ```
 
-## LD prepared
+## :scroll: LD prepared
 We provide a function `plinkLD.py` for efficient LD information extraction and shrinkage based on Python. 
 Users could either specify their own LD reference files with plink bfile format (.bim, .fam, .bed), or use the pre-computed LD information. We provide two examples here.
 
-NOTE: We suggest users use plink bfile as the input, because the different numbers of SNPs in GWAS and in the reference panel may lead to a slight difference in the LD shrinkage.
+:exclamation: NOTE: We suggest users use plink bfile as the input, because the different numbers of SNPs in GWAS and in the reference panel may lead to a slight difference in the LD shrinkage.
 
 ### Example 1: Use plink bfile as the input (recommended)
 The 1000 Genome Project reference panel (hg19) can be downloaded by:
@@ -68,7 +68,10 @@ The pre-computed LD information of 276,050 UK Biobank European individuals can b
 
 `unzip LD.zip`
 
-## Estimation of heritability and inflation factor
+:exclamation: NOTE: Please keep the download path the SAME with that used in function `runLDER`.
+
+
+## :rocket: Estimation of heritability and inflation factor
 The main funcion can be run with:
 
 ```r
@@ -102,7 +105,7 @@ runLDER(assoc=GWAS_SUMMARY_STATISTICS (required),
 
 
 
-## Output
+## :bulb: Output
 
 If `method='lder'`, the `runLDER` function returns a list with 4 elements:
 
@@ -117,7 +120,7 @@ If `method='lder'`, the `runLDER` function returns a list with 4 elements:
 If `method='both'`, the `runLDER` function returns a list containing the results of both LDER and LDSC.
 
 
-## A Simplified Pipeline
+## :key: A Simplified Pipeline
 Download a sample GWAS summary statistics:
 
 $ wget -O gwas_sample.txt https://cloud.tsinghua.edu.cn/f/828ab71c87d84dd28d47/?dl=1
@@ -145,7 +148,7 @@ res <- runLDER(assoc, n.gwas=2e4, path=path0, LD.insample=F, ethnic='eur', n.ld=
 ```
 
 
-## Maintainer
+## :busts_in_silhouette: Maintainer
 
 Please contact Shuang Song (song-s19@mails.tsinghua.edu.cn) if there are any problems or questions.
 
