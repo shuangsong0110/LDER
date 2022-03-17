@@ -1,7 +1,7 @@
 # LDER
 We design a method for heritability estimation, namely LD Eigenvalue Regression (LDER), which extends the LDSC method and provides more accurate estimates of heritability and confounding inflation.
 
-Citation:
+:open_book: Citation:
 
 Shuang Song, Wei Jiang, Yiliang Zhang, Lin Hou, and Hongyu Zhao. Leveraging LD eigenvalue regression to improve the estimation of SNP heritability and confounding inflation. Submitted.
 
@@ -12,7 +12,7 @@ Shuang Song, Wei Jiang, Yiliang Zhang, Lin Hou, and Hongyu Zhao. Leveraging LD e
 * [Output](#output)
 * [A Simplified Pipeline](#a-simplified-pipeline)
 
-## :open_book: Install
+## :hammer: Install
 LDER is an R package which can be installed using the command:
 ```r
 devtools::install_github('shuangsong0110/LDER')
