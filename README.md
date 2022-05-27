@@ -14,6 +14,10 @@ Song, S., Jiang, W., Zhang, Y., Hou, L., & Zhao, H. (2022). Leveraging LD eigenv
 * [A Simplified Pipeline](#a-simplified-pipeline)
 
 ## :hammer: Install
+R >= 3.0.0
+
+Python 3.6
+
 LDER is an R package which can be installed using the command:
 ```r
 devtools::install_github('shuangsong0110/LDER')
