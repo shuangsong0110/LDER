@@ -146,7 +146,7 @@ library(data.table)
 path0 <- getwd()
 assoc <- fread('gwas_sample.txt')
 for(chr in 1:22){
-    generateLD(assoc, path = path0, bfile_path = paste0('/1000G_EUR_Phase3_plink/1000G.EUR.QC.', chr))
+    generateLD(assoc, path = path0, bfile_path = paste0('./1000G_EUR_Phase3_plink/1000G.EUR.QC.', chr))
 }
 res <- runLDER(assoc, n.gwas=2e4, path=path0, LD.insample=F, ethnic='eur', n.ld=489, cores=10, method='lder', a=NULL)
 
