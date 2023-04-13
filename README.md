@@ -32,7 +32,7 @@ Users could either specify their own LD reference files with plink bfile format 
 ### Example 1: Use plink bfile as the input (recommended)
 The 1000 Genome Project reference panel (hg19) can be downloaded by:
 
-`wget https://data.broadinstitute.org/alkesgroup/LDSCORE/1000G_Phase3_plinkfiles.tgz`
+`wget https://zenodo.org/record/7768714/files/1000G_Phase3_plinkfiles.tgz?download=1`
 
 `tar -xvzf 1000G_Phase3_plinkfiles.tgz`
 
