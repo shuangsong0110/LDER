@@ -27,9 +27,6 @@ devtools::install_github('shuangsong0110/LDER')
 We provide a function `plinkLD.py` for efficient LD information extraction and shrinkage based on Python. 
 Users could either specify their own LD reference files with plink bfile format (.bim, .fam, .bed), or use the pre-computed LD information. We provide two examples here.
 
-`wget -O plinkLD.zip https://cloud.tsinghua.edu.cn/f/2d887f24142745e3bf01/?dl=1`
-
-`unzip plinkLD.zip`
 
 :exclamation: NOTE: We suggest users use plink bfile as the input, because the different numbers of SNPs in GWAS and in the reference panel may lead to a slight difference in the LD shrinkage.
 
