@@ -37,7 +37,7 @@ generateLD <- function(assoc, path, bfile_path, cores=10, ethnic='eur', plink_pa
     plink <- plink_path
   }
   if(!file.exists('./plinkLD/plinkLD.py')){
-    system('wget -O plinkLD.zip https://cloud.tsinghua.edu.cn/f/3f96074ee7ee436895ac/?dl=1 --no-check-certificate')
+    system('wget -O plinkLD.zip https://cloud.tsinghua.edu.cn/f/2d887f24142745e3bf01/?dl=1 --no-check-certificate')
   system('unzip plinkLD.zip')
   system('rm plinkLD.zip')
   }
