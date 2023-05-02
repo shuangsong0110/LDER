@@ -62,6 +62,8 @@ generateLD(assoc=GWAS_SUMMARY_STATISTICS (required),
 
 - PATH_TO_PYTHON_SOFTWARE (optional): The path to the python software. If not specified, the function will use the default path (system("which python"))
 
+Note: The function will automatically download and install plinkLD functions. If it does not work, the packages can also be downloaded with `wget -O plinkLD.zip https://cloud.tsinghua.edu.cn/f/7c002e9b9539450182ef/?dl=1 --no-check-certificate` 
+
 ### Example 2: Use the pre-computed LD information
 
 The pre-computed LD information of 276,050 UK Biobank European individuals can be downloaded by
