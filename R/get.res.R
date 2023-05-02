@@ -4,7 +4,7 @@ get.res <- function(x1,lam1,n.gwas,a,rough,twostage){
     newGC <-  1+n.gwas*calH2.new1(x1, lam1,   N=n.gwas,a=NULL, rough=F)$a
     #print(newGC)
     if(newGC<1.05){
-      s2thld <- 3.5*sqrt(m/n.gwas)+2.5 #Not know the reason yet, but it works very well. So, Why??!!!
+      s2thld <- 3.5*sqrt(m/n.gwas)+2.5 
     }else{
       s2thld <- quantile(x1^2, 1-5/m)
     }
