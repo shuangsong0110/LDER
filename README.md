@@ -3,7 +3,7 @@ We design a method for heritability estimation, namely LD Eigenvalue Regression 
 
 :open_book: Citation:
 
-Song, S., Jiang, W., Zhang, Y., Hou, L., & Zhao, H. (2022). Leveraging LD eigenvalue regression to improve the estimation of SNP heritability and confounding inflation. The American Journal of Human Genetics, 109(5), 802-811.
+Song, S., Jiang, W., Zhang, Y., Hou, L., & Zhao, H. (2022). [Leveraging LD eigenvalue regression to improve the estimation of SNP heritability and confounding inflation](https://www.sciencedirect.com/science/article/pii/S0002929722001094). The American Journal of Human Genetics, 109(5), 802-811.
 
 2023 May 1 updates: Optimization of LD computation 
 
