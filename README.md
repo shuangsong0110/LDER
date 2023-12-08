@@ -9,10 +9,10 @@ Song, S., Jiang, W., Zhang, Y., Hou, L., & Zhao, H. (2022). [Leveraging LD eigen
 
 ## Table of contents
 * [Install](#install)
-* [LD prepared](#ld-prepared)
-* [Estimation of heritability and inflation factor](#estimation-of-heritability-and-inflation-factor)
-* [Output](#output)
-* [A Simplified Pipeline](#a-simplified-pipeline)
+* [LD prepared](#scroll-ld-prepared)
+* [Estimation of heritability and inflation factor](#rocket-estimation-of-heritability-and-inflation-factor)
+* [Output](#bulb-output)
+* [A Simplified Pipeline](#key-a-simplified-pipeline)
 
 ## :hammer: Install
 R >= 3.0.0
