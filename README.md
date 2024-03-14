@@ -8,7 +8,7 @@ Song, S., Jiang, W., Zhang, Y., Hou, L., & Zhao, H. (2022). [Leveraging LD eigen
 2023 May 1 updates: Optimization of LD computation 
 
 ## Table of contents
-* [Install](#install)
+* [Install](#hammer-install)
 * [LD prepared](#scroll-ld-prepared)
 * [Estimation of heritability and inflation factor](#rocket-estimation-of-heritability-and-inflation-factor)
 * [Output](#bulb-output)
