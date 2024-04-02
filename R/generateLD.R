@@ -43,7 +43,7 @@ generateLD <- function(assoc, path, bfile_path, cores=10, ethnic='eur', plink_pa
   }
   write.table(assoc$snp,'snp.txt',quote=F,row.names=F,col.names=F)
   system(paste0(plink,' --bfile ',bfile_path,' --extract snp.txt --make-bed --out geno --noweb'))
-  system(paste0(python,' ./plinkLD/plinkLD.py --bfile geno  --block ./plinkLD/ldetect-data/fourier_ls-all.bed --snplist ./plinkLD/w_hm3.snplist --output ',
+  system(paste0(python,' ./plinkLD_v2_20230501/plinkLD_v2/plinkLD.py --bfile geno  --block ./plinkLD_v2_20230501/plinkLD_v2/ldetect-data/fourier_ls-all.bed --snplist ./plinkLD_v2_20230501/plinkLD_v2/w_hm3.snplist --output ',
   path,'/LD.shrink/ --thread ',cores,' --method LW'))
   }
 }
