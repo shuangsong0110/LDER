@@ -67,11 +67,9 @@ Note: The function will automatically download and install plinkLD functions. If
 
 ### Example 2: Use the pre-computed LD information
 
-The pre-computed LD information of 276,050 UK Biobank European individuals can be downloaded by
+The pre-computed LD information of 276,050 UK Biobank European individuals can be downloaded from
 
-`wget -O LD.shrink.zip https://cloud.tsinghua.edu.cn/f/abf1020acb9c435eaa13/?dl=1 --no-check-certificate`
-
-`wget -O LD.zip https://cloud.tsinghua.edu.cn/f/d93a4a7013fe461aa9fc/?dl=1 --no-check-certificate`
+`https://1drv.ms/f/c/9996dd35fdd8c998/EnBDxUkyqZJCkwFumdv9ydQBmM-_LZfRsb-u_RUVEoeYIQ?e=VAb7Xj`
 
 `unzip LD.shrink.zip`
 
@@ -130,9 +128,7 @@ If `method='both'`, the `runLDER` function returns a list containing the results
 
 
 ## :key: A Simplified Pipeline
-Download a sample GWAS summary statistics:
-
-$ wget -O gwas_sample.txt https://cloud.tsinghua.edu.cn/f/828ab71c87d84dd28d47/?dl=1 --no-check-certificate
+Download a sample GWAS summary statistics from `https://1drv.ms/f/c/9996dd35fdd8c998/EnBDxUkyqZJCkwFumdv9ydQBmM-_LZfRsb-u_RUVEoeYIQ?e=VAb7Xj`:
 
 Download 1000G LD reference:
 
