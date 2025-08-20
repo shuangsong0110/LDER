@@ -63,7 +63,8 @@ generateLD(assoc=GWAS_SUMMARY_STATISTICS (required),
 
 - PATH_TO_PYTHON_SOFTWARE (optional): The path to the python software. If not specified, the function will use the default path (system("which python"))
 
-Note: The function will automatically download and install plinkLD functions. If it does not work, the packages can also be downloaded with `wget -O plinkLD.zip https://cloud.tsinghua.edu.cn/f/7c002e9b9539450182ef/?dl=1 --no-check-certificate` 
+Note: The function will automatically download and install plinkLD functions. If it does not work, the packages can also be downloaded from
+`https://1drv.ms/f/c/9996dd35fdd8c998/EnBDxUkyqZJCkwFumdv9ydQBmM-_LZfRsb-u_RUVEoeYIQ?e=VAb7Xj`
 
 ### Example 2: Use the pre-computed LD information
 
@@ -155,6 +156,6 @@ res <- runLDER(assoc, n.gwas=2e4, path=path0, LD.insample=F, ethnic='eur', n.ld=
 
 ## :busts_in_silhouette: Maintainer
 
-Please contact Shuang Song (song-s19@mails.tsinghua.edu.cn) if there are any problems or questions.
+Please contact Shuang Song (shuangsong@hsph.harvard.edu) if there are any problems or questions.
 
 
